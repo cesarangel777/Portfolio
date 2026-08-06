@@ -312,6 +312,11 @@ code {
   color: var(--text-muted);
 }
 
+.badge-progress {
+  background: rgba(255, 180, 84, 0.14);
+  color: #ffb454;
+}
+
 .project h3 { font-size: 1.5rem; margin-bottom: 0.7rem; }
 
 .project p { color: var(--text-muted); }
@@ -388,6 +393,25 @@ code {
 .workflow-step h3 { font-size: 1.05rem; margin-bottom: 0.45rem; }
 
 .workflow-step p { color: var(--text-muted); font-size: 0.9rem; }
+
+.mentor-box {
+  margin-top: 2.5rem;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background: linear-gradient(135deg, rgba(53, 162, 255, 0.08), rgba(124, 92, 255, 0.08));
+  border: 1px solid rgba(53, 162, 255, 0.25);
+  border-radius: var(--radius);
+}
+
+.mentor-box h3 {
+  color: var(--accent);
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+}
+
+.mentor-box p {
+  color: var(--text-muted);
+  max-width: 60rem;
+}
 
 /* ---------- Skills ---------- */
 

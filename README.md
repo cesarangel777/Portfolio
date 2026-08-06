@@ -10,8 +10,10 @@ auf Junior-Stellen als Programmierer.
 | Projekt | Beschreibung | Technik |
 | --- | --- | --- |
 | **ParkApp KSTA** | Mobile-first Prototyp für die Parkplatz-Buchung (Steueramt Zürich) | React 18, Vite |
+| **LS Studio** | Kundenprojekt: Website für ein Luxury Nail Studio in Aarau | HTML, CSS, JavaScript |
 | **C Visionary Studio** | Business-Website für KI-generierte Videos & Bilder | HTML, CSS, JavaScript |
 | **Helvetic Narcos** | Landingpage für ein Streetwear-Label mit Scroll-Intro | HTML, CSS, JavaScript |
+| **Python-Grundlagen** | Mini-Projekte mit GPT-Mentor (z. B. CIS Ticket-System) | Python |
 
 ## Technik
 
@@ -26,7 +28,8 @@ Portfolio/
 ├── index.html          ← Einstiegsseite (alle Inhalte)
 ├── css/style.css       ← Design
 ├── js/main.js          ← Navigation, Scroll-Reveal
-└── assets/img/         ← Projekt-Screenshots
+├── assets/img/         ← Projekt-Screenshots
+└── projects/           ← Beispiel-Code der Lernprojekte
 ```
 
 ## Lokal ansehen
