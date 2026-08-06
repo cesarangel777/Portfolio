@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LS Studio · Projekt von César</title>
+  <meta name="description" content="LS Studio: Website für ein Luxury Nail Studio in Aarau – Branding, Animationen und Accessibility.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav-logo">C<span>ésar</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="../projekte.html" aria-current="page">Projekte</a></li>
+        <li><a href="../ueber-mich.html">Über mich</a></li>
+        <li><a href="../kontakt.html" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Brotkrumen-Navigation">
+          <a href="../index.html">Start</a> <span aria-hidden="true">›</span>
+          <a href="../projekte.html">Projekte</a> <span aria-hidden="true">›</span>
+          <span>LS Studio</span>
+        </nav>
+        <div class="project-meta">
+          <span class="badge badge-type">Kundenprojekt · Website</span>
+          <span class="badge badge-progress">In Entwicklung</span>
+        </div>
+        <h1>LS Studio</h1>
+        <p class="lead">
+          One-Page-Website für ein Luxury Nail Studio in Aarau – entwickelt für
+          eine echte Kundin, mit einem sehr eigenständigen visuellen Auftritt.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+
+        <div class="detail-main">
+
+          <h2>Die Aufgabe</h2>
+          <p>
+            LS Studio ist kein gewöhnliches Nagelstudio – und die Website sollte
+            das sofort zeigen. Die Marke lebt von 90s- und Y2K-Nostalgie, Street
+            Style und dem Claim «Pretty Loud.». Die Herausforderung war, diese
+            laute, mutige Energie in eine Website zu übersetzen, die trotzdem
+            professionell und übersichtlich bleibt.
+          </p>
+          <p>
+            Anders als bei meinen eigenen Projekten musste ich hier die
+            Vorstellungen einer anderen Person treffen – inklusive Rückfragen,
+            Anpassungen und dem Abwägen zwischen Effekt und Nutzbarkeit.
+          </p>
+
+          <h2>Screenshots</h2>
+          <div class="gallery">
+            <figure>
+              <button type="button">
+                <img src="../assets/img/lsstudio.jpg" alt="Startbereich mit dem Claim Pretty Loud in Chrome-Optik">
+              </button>
+              <figcaption>Startbereich mit Chrome-Typografie</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../assets/img/lsstudio-2.jpg" alt="Service-Liste mit vier Angeboten in grosser Typografie">
+              </button>
+              <figcaption>Services mit Hover-Effekt</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../assets/img/lsstudio-3.jpg" alt="Experience-Bereich mit Kachel-Raster und Zitat">
+              </button>
+              <figcaption>Experience-Bereich im Kachel-Raster</figcaption>
+            </figure>
+          </div>
+
+          <h2>Was ich technisch umgesetzt habe</h2>
+          <ul>
+            <li>
+              <strong>Branding als Farbsystem:</strong> Sämtliche Marken-Farben
+              liegen als CSS-Variablen zentral am Anfang der Stylesheet-Datei –
+              das Erscheinungsbild ist dadurch an einer Stelle anpassbar.
+            </li>
+            <li>
+              <strong>Eigene Effekte ohne Bibliotheken:</strong> Chrome-Schrift per
+              Farbverlauf und <code>background-clip</code>, ein endlos laufendes
+              Laufband, rotierende Kreise, Sticker und ein Cursor-Glow, der der
+              Maus folgt.
+            </li>
+            <li>
+              <strong>Barrierefreiheit von Anfang an:</strong> Skip-Link zum Inhalt,
+              ARIA-Attribute an der Navigation, sinnvolle Alternativtexte – und der
+              gesamte Bewegungsanteil schaltet sich bei
+              <code>prefers-reduced-motion</code> ab.
+            </li>
+            <li>
+              <strong>Scroll-Reveal:</strong> Inhalte blenden sich beim Scrollen ein,
+              gesteuert über den <code>IntersectionObserver</code> statt über
+              Scroll-Events – deutlich schonender für die Leistung.
+            </li>
+            <li>
+              <strong>Vollständig responsiv:</strong> Auf dem Handy wird die
+              Navigation zu einem animierten Vollbild-Menü.
+            </li>
+          </ul>
+
+          <h2>Was ich dabei gelernt habe</h2>
+          <p>
+            Das erste Mal, dass jemand anderes mit dem Ergebnis zufrieden sein
+            musste – nicht ich. Das verändert die Arbeitsweise: Ich habe gelernt,
+            Zwischenstände zu zeigen, Feedback einzuholen und Designentscheidungen
+            zu begründen, statt einfach umzusetzen, was mir gefällt.
+          </p>
+          <p>
+            Technisch war es mein bislang anspruchsvollstes CSS-Projekt. Effekte
+            wie die Chrome-Schrift oder das Laufband habe ich mir Schritt für
+            Schritt erklären lassen, bis ich verstanden habe, <em>warum</em> sie
+            funktionieren – und nicht nur, dass sie funktionieren.
+          </p>
+
+          <h2>Nächste Schritte</h2>
+          <ul>
+            <li>Finale Fotos, Preise und Behandlungsdauer einsetzen</li>
+            <li>Online-Buchungslink anbinden</li>
+            <li>Impressum, Datenschutz und AGB ergänzen</li>
+            <li>Veröffentlichung unter eigener Domain</li>
+          </ul>
+
+          <div class="next-project">
+            <a href="parkapp-ksta.html">← Vorheriges: ParkApp KSTA</a>
+            <a href="c-visionary-studio.html">Nächstes Projekt: C Visionary Studio →</a>
+          </div>
+        </div>
+
+        <aside class="detail-side reveal">
+          <h3>Rolle</h3>
+          <p>Umsetzung der Website nach den Markenvorgaben der Kundin.</p>
+
+          <h3>Technik</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 (Custom Properties)</li>
+            <li>JavaScript</li>
+            <li>IntersectionObserver</li>
+            <li>Web Animations API</li>
+          </ul>
+
+          <h3>Status</h3>
+          <p>In Entwicklung – Struktur und Design stehen, Inhalte werden ergänzt.</p>
+
+          <h3>Besonderheit</h3>
+          <p>Accessibility und <code>prefers-reduced-motion</code> von Beginn an mitgedacht.</p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Schliessen">×</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> César · Erstellt mit HTML, CSS, JavaScript – und einem KI-gestützten Workflow.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -4,32 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>César · Portfolio – Junior Developer</title>
-  <meta name="description" content="Portfolio von César – Junior Developer mit KI-gestütztem Workflow. Web-Projekte von der Idee bis zum Deployment.">
+  <meta name="description" content="Portfolio von César – Junior Developer mit KI-gestütztem Workflow. Web-Apps, Business-Websites und Programmier-Grundlagen.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ============ NAVIGATION ============ -->
   <header class="site-header">
     <nav class="nav container">
-      <a href="#top" class="nav-logo">C<span>ésar</span></a>
+      <a href="index.html" class="nav-logo">C<span>ésar</span></a>
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#ueber-mich">Über mich</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#arbeitsweise">Arbeitsweise</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+        <li><a href="index.html" aria-current="page">Start</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
 
-    <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="container hero-inner">
         <p class="hero-kicker reveal">Portfolio · Junior Developer</p>
@@ -37,313 +34,119 @@
           Ich baue Web-Projekte –<br class="only-desktop">
           von der Idee bis zum Deployment.</h1>
         <p class="hero-sub reveal">
-          Ich entwickle mit einem modernen, KI-gestützten Workflow: Ich plane und
-          strukturiere meine Projekte, setze sie gemeinsam mit KI-Coding-Tools wie
-          Claude Code um und bringe sie mit Git &amp; GitHub live. Hier zeige ich,
-          was dabei bisher entstanden ist.
+          Ich entwickle mit einem modernen, KI-gestützten Workflow in VS Code:
+          Ich plane und strukturiere meine Projekte, setze sie gemeinsam mit
+          KI-Coding-Tools um und bringe sie mit Git &amp; GitHub live. Parallel
+          lerne ich die Grundlagen von Grund auf – mit einem GPT-Mentor als
+          Ausbilder.
         </p>
         <div class="hero-actions reveal">
-          <a href="#projekte" class="btn btn-primary">Projekte ansehen</a>
-          <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
+          <a href="projekte.html" class="btn btn-primary">Projekte ansehen</a>
+          <a href="ueber-mich.html" class="btn btn-ghost">Mehr über mich</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ ÜBER MICH ============ -->
-    <section id="ueber-mich" class="section">
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Ausgewählte Projekte</h2>
+        <p class="section-lead reveal">
+          Ein eigenes IT-Support-Business, eine React-App für ein Steueramt und
+          Websites für echte Kundinnen und Kunden. Jedes Projekt hat eine eigene
+          Detailseite mit Screenshots und technischen Hintergründen.
+        </p>
+
+        <div class="card-grid">
+
+          <a class="card reveal" href="projekte/cis-it-support.html">
+            <div class="card-media">
+              <img src="assets/img/cis.jpg" alt="Startseite von CIS – C IT Support mit Matrix-Animation" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="badge badge-type">Eigenes Business</span>
+                <span class="badge badge-live">Live</span>
+              </div>
+              <h3>CIS – C IT Support</h3>
+              <p>Website für meinen eigenen IT-Support-Service: animierter Matrix-Hintergrund, Preispakete und Kontaktformular.</p>
+              <div class="card-foot">
+                <span class="card-tags">HTML · CSS · JavaScript · Canvas</span>
+                <span class="card-more">Details →</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="card reveal" href="projekte/parkapp-ksta.html">
+            <div class="card-media">
+              <img src="assets/img/parkapp-2.jpg" alt="ParkApp KSTA – Liste freier Parkplätze" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="badge badge-type">Web-App</span>
+                <span class="badge badge-private">Privates Repo</span>
+              </div>
+              <h3>ParkApp KSTA</h3>
+              <p>React-Prototyp für die Parkplatz-Buchung beim Steueramt Zürich – kompletter Prozess vom Suchen bis zur Bestätigung.</p>
+              <div class="card-foot">
+                <span class="card-tags">React 18 · Vite · Mobile-first</span>
+                <span class="card-more">Details →</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="card reveal" href="projekte/ls-studio.html">
+            <div class="card-media">
+              <img src="assets/img/lsstudio.jpg" alt="LS Studio Website – Hero-Bereich mit dem Claim Pretty Loud" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="badge badge-type">Kundenprojekt</span>
+                <span class="badge badge-progress">In Entwicklung</span>
+              </div>
+              <h3>LS Studio</h3>
+              <p>Website für ein Luxury Nail Studio in Aarau – mutiges Branding im Code umgesetzt, mit Accessibility von Anfang an.</p>
+              <div class="card-foot">
+                <span class="card-tags">HTML · CSS · JavaScript</span>
+                <span class="card-more">Details →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <p class="reveal" style="margin-top: 2rem;">
+          <a class="btn btn-ghost" href="projekte.html">Alle sechs Projekte ansehen →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
       <div class="container narrow">
-        <h2 class="section-title reveal">Über mich</h2>
+        <h2 class="section-title reveal">Kurz zu mir</h2>
         <div class="about reveal">
           <p>
             Ich bin auf dem Weg in die Software-Entwicklung – und ich gehe ihn so,
             wie moderne Teams heute arbeiten: mit KI als Werkzeug, aber mit eigenem
-            Verständnis für Struktur, Code und Prozess. Jedes Projekt auf dieser
-            Seite habe ich selbst konzipiert, umgesetzt und veröffentlicht.
-          </p>
-          <p>
-            Was mich antreibt: aus einer Idee etwas Echtes zu machen, das man
-            anklicken, benutzen und zeigen kann. Dabei lerne ich mit jedem Projekt
-            dazu – von sauberem HTML/CSS über JavaScript, Python und React bis zum
-            Deployment und dem Arbeiten mit Git-Branches und Pull Requests.
-          </p>
-          <p>
-            Mein tägliches Werkzeug ist <strong>Visual Studio Code</strong> –
-            hier schreibe, teste und versioniere ich meinen Code. Parallel dazu
-            bilde ich mich strukturiert weiter: mit einem selbst konfigurierten
-            <strong>GPT-Mentor</strong>, der mich wie ein Senior-Entwickler einen
-            Junior ausbildet – mit Übungsaufgaben, Code-Reviews und Erklärungen
-            zu den Hintergründen jeder Entscheidung.
+            Verständnis für Struktur, Code und Prozess. Jedes Projekt hier habe ich
+            selbst konzipiert, umgesetzt und veröffentlicht.
           </p>
           <p>
             Ich suche eine <strong>Junior-Stelle als Programmierer</strong>, bei der
             ich diese Arbeitsweise einbringen und unter erfahrenen Entwicklerinnen
             und Entwicklern weiter wachsen kann.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROJEKTE ============ -->
-    <section id="projekte" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title reveal">Projekte</h2>
-        <p class="section-lead reveal">
-          Fünf Projekte, fünf unterschiedliche Herausforderungen – von der
-          Web-App über Kunden-Websites bis zu Programmier-Grundlagen. Alle mit
-          KI-gestütztem Workflow in VS Code entwickelt.
-        </p>
-
-        <!-- Projekt 1: ParkApp KSTA -->
-        <article class="project reveal">
-          <div class="project-media project-media-mobile">
-            <img src="assets/img/parkapp.jpg" alt="Screenshot der ParkApp KSTA – Startbildschirm mit Buchungsprozess" loading="lazy">
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="badge badge-type">Web-App · Prototyp</span>
-              <span class="badge badge-private">Privates Repo · Einblick auf Anfrage</span>
-            </div>
-            <h3>ParkApp KSTA</h3>
-            <p>
-              Mobile-first Prototyp für die Parkplatz-Buchung beim Steueramt Zürich.
-              Die App bildet den kompletten realen Prozess digital ab: Verfügbarkeit
-              prüfen, Anfrage senden, Zahlung via TWINT, Bestätigung verwalten –
-              alles in einer aufgeräumten Oberfläche statt E-Mail- und Kalender-Chaos.
-            </p>
-            <ul class="project-highlights">
-              <li>Kompletter Buchungs-Flow über mehrere Screens mit eigener Navigation</li>
-              <li>Datenhaltung im <code>localStorage</code>, sauber gekapselt für späteren Backend-Anschluss</li>
-              <li>Roadmap Richtung Produktion: Microsoft Graph, SSO, PWA</li>
-            </ul>
-            <div class="project-tags">
-              <span>React 18</span><span>Vite</span><span>JavaScript</span><span>Mobile-first</span><span>PWA-ready</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Projekt 2: LS Studio -->
-        <article class="project reveal">
-          <div class="project-media">
-            <img src="assets/img/lsstudio.jpg" alt="Screenshot der LS Studio Website – Hero-Bereich mit dem Claim Pretty Loud" loading="lazy">
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="badge badge-type">Kundenprojekt · Website</span>
-              <span class="badge badge-progress">In Entwicklung</span>
-            </div>
-            <h3>LS Studio</h3>
-            <p>
-              One-Page-Website für ein Luxury Nail Studio in Aarau – entwickelt
-              für eine echte Kundin. Das Design übersetzt die Marke («Pretty
-              Loud.», 90s/Y2K Street Glam) in ein mutiges Web-Erlebnis: grosse
-              Typografie mit Chrome-Effekt, Hero-Video, Laufband-Ticker,
-              Lookbook-Galerie und Cursor-Glow.
-            </p>
-            <ul class="project-highlights">
-              <li>Komplettes Branding im Code umgesetzt: Farbsystem als CSS-Variablen, eigene Effekte (Chrome-Text, Sticker, Ticker)</li>
-              <li>Barrierefreiheit mitgedacht: Skip-Link, ARIA-Attribute, <code>prefers-reduced-motion</code></li>
-              <li>Responsiv bis aufs Handy, inklusive Vollbild-Menü mit Animation</li>
-            </ul>
-            <div class="project-tags">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Branding</span><span>Accessibility</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Projekt 3: C Visionary Studio -->
-        <article class="project reveal">
-          <div class="project-media">
-            <img src="assets/img/cvisionary.jpg" alt="Screenshot der Website C Visionary Studio – KI-Videos und Bilder für Unternehmen" loading="lazy">
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="badge badge-type">Business-Website</span>
-              <span class="badge badge-live">Live</span>
-            </div>
-            <h3>C Visionary Studio</h3>
-            <p>
-              Komplette Business-Website für ein Studio, das KI-generierte Videos,
-              Bilder und Werbeinhalte für KMU erstellt – mit Leistungen, Referenzen,
-              Preisen und Anfrage-Funnel. Vom Konzept über das Design bis zum
-              Deployment selbst umgesetzt.
-            </p>
-            <ul class="project-highlights">
-              <li>Mehrseitige Website mit animiertem Hero, Preisseite und klarer Conversion-Führung</li>
-              <li>Responsives Layout, Scroll-Animationen, durchgängiges Branding</li>
-              <li>Veröffentlicht über GitHub Pages</li>
-            </ul>
-            <div class="project-tags">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>GitHub Pages</span>
-            </div>
-            <div class="project-links">
-              <a class="btn btn-small btn-primary" href="https://cesarangel777.github.io/mein-erstes-projekt/" target="_blank" rel="noopener">Live ansehen</a>
-              <a class="btn btn-small btn-ghost" href="https://github.com/cesarangel777/mein-erstes-projekt" target="_blank" rel="noopener">Code auf GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Projekt 4: Helvetic Narcos -->
-        <article class="project reveal">
-          <div class="project-media">
-            <img src="assets/img/helvetic.jpg" alt="Screenshot der Helvetic Narcos Landingpage – dunkles Intro mit Gothic-Schriftzug" loading="lazy">
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="badge badge-type">Brand-Landingpage</span>
-              <span class="badge badge-private">Privates Repo · Einblick auf Anfrage</span>
-            </div>
-            <h3>Helvetic Narcos</h3>
-            <p>
-              Atmosphärische Landingpage für ein Streetwear-Label: «Swiss precision,
-              Mexican blood». Ein inszeniertes Scroll-Erlebnis mit Intro-Sequenz,
-              Animationen und starkem Branding für eine auf 777 Stück limitierte
-              Kollektion – inklusive eigenem Deployment-Script für den Webserver.
-            </p>
-            <ul class="project-highlights">
-              <li>Scroll-gesteuerte Intro-Inszenierung und Animationen</li>
-              <li>Komplettes Brand-Design: Typografie, Assets, Sound</li>
-              <li>Deployment per selbst eingerichtetem FTP-Upload-Script</li>
-            </ul>
-            <div class="project-tags">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Animationen</span><span>FTP-Deployment</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Projekt 5: Python-Mini-Projekte -->
-        <article class="project reveal">
-          <div class="project-media">
-            <img src="assets/img/python-terminal.jpg" alt="Terminal-Ausgabe des CIS Ticket-Systems – Python-Übungsprojekt" loading="lazy">
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="badge badge-type">Lernprojekte · Python</span>
-              <span class="badge badge-live">Fortlaufend</span>
-            </div>
-            <h3>Programmier-Grundlagen mit GPT-Mentor</h3>
-            <p>
-              Neben den Web-Projekten lerne ich die Basis der Programmierung von
-              Grund auf – mit vielen kleinen Übungsprojekten in Python. Dafür habe
-              ich mir einen GPT-Mentor konfiguriert, der mich wie ein
-              Senior-Entwickler ausbildet: orientiert an der Schweizer
-              Informatik-Ausbildung (Applikationsentwicklung EFZ), mit Aufgaben,
-              Code-Reviews und Best Practices statt fertigen Lösungen.
-            </p>
-            <ul class="project-highlights">
-              <li>Beispiel im Bild: ein Ticket-System mit Schleifen, Bedingungen, Eingabe-Verarbeitung und f-Strings</li>
-              <li>Fokus auf Software-Engineering-Grundlagen: Clean Code, Git, Testing, Datenbanken, APIs</li>
-              <li>KI bewusst als Werkzeug und Lehrer eingesetzt – nicht als Abkürzung</li>
-            </ul>
-            <div class="project-tags">
-              <span>Python</span><span>VS Code</span><span>Grundlagen</span><span>GPT-Mentor</span>
-            </div>
-            <div class="project-links">
-              <a class="btn btn-small btn-ghost" href="projects/python-basics/ticket_app_v2.py" target="_blank" rel="noopener">Code ansehen</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ============ ARBEITSWEISE ============ -->
-    <section id="arbeitsweise" class="section">
-      <div class="container">
-        <h2 class="section-title reveal">Meine Arbeitsweise mit KI</h2>
-        <p class="section-lead reveal">
-          KI-Tools schreiben mit – aber ich entscheide. So sieht mein Workflow aus,
-          mit dem jedes dieser Projekte entstanden ist:
-        </p>
-        <div class="workflow">
-          <div class="workflow-step reveal">
-            <span class="workflow-num">1</span>
-            <h3>Idee &amp; Konzept</h3>
-            <p>Ziel, Zielgruppe und Umfang definieren. Was soll das Projekt können, wie soll es sich anfühlen?</p>
-          </div>
-          <div class="workflow-step reveal">
-            <span class="workflow-num">2</span>
-            <h3>Struktur &amp; Prompting</h3>
-            <p>Seitenaufbau und Features klar beschreiben. Je präziser die Anforderung, desto besser das Ergebnis – das gilt für KI wie für Teams.</p>
-          </div>
-          <div class="workflow-step reveal">
-            <span class="workflow-num">3</span>
-            <h3>Umsetzung mit KI-Tools</h3>
-            <p>Entwicklung im Dialog mit Claude Code &amp; Co.: Code generieren, verstehen, hinterfragen und Schritt für Schritt verfeinern.</p>
-          </div>
-          <div class="workflow-step reveal">
-            <span class="workflow-num">4</span>
-            <h3>Testen &amp; Review</h3>
-            <p>Jede Änderung im Browser und auf dem Handy prüfen. Was ich nicht verstehe, lasse ich mir erklären – bis ich es erklären kann.</p>
-          </div>
-          <div class="workflow-step reveal">
-            <span class="workflow-num">5</span>
-            <h3>Git &amp; Deployment</h3>
-            <p>Versionierung mit Git, Zusammenarbeit über GitHub (Branches, Pull Requests), Veröffentlichung via GitHub Pages oder FTP.</p>
-          </div>
-        </div>
-
-        <aside class="mentor-box reveal">
-          <h3>Mein Lern-Setup: GPT als Mentor</h3>
-          <p>
-            Ich lerne nicht zufällig, sondern mit System: In VS Code arbeite ich
-            an Übungsprojekten, während ein von mir konfigurierter GPT-Mentor die
-            Rolle eines Senior Software Engineers übernimmt – ausgerichtet auf die
-            Schweizer Informatik-Ausbildung (Applikationsentwicklung EFZ). Er
-            stellt mir Aufgaben, macht Code-Reviews und erklärt die Hintergründe
-            jeder Entscheidung. Der Fokus liegt auf Software-Engineering:
-            Clean Code, Testing, Git, Datenbanken, APIs und Architektur –
-            KI setze ich dabei bewusst als Werkzeug ein, nicht als Ersatz fürs
-            eigene Verständnis.
+          <p style="margin-top: 1.5rem;">
+            <a class="btn btn-ghost" href="ueber-mich.html">Meine Arbeitsweise &amp; Skills →</a>
           </p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ============ SKILLS ============ -->
-    <section id="skills" class="section section-alt">
-      <div class="container narrow">
-        <h2 class="section-title reveal">Skills &amp; Tools</h2>
-        <div class="skills reveal">
-          <div class="skill-group">
-            <h3>Programmierung</h3>
-            <div class="skill-tags">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python (Grundlagen)</span><span>React (Grundlagen)</span><span>Responsive Design</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h3>Tools &amp; Workflow</h3>
-            <div class="skill-tags">
-              <span>VS Code</span><span>Git</span><span>GitHub</span><span>Vite</span><span>npm</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h3>KI-gestützte Entwicklung</h3>
-            <div class="skill-tags">
-              <span>Claude Code</span><span>ChatGPT (Mentor-Setup)</span><span>Prompt Engineering</span><span>Code-Review mit KI</span><span>KI-Content (Video/Bild)</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h3>Deployment</h3>
-            <div class="skill-tags">
-              <span>GitHub Pages</span><span>FTP</span><span>Build-Prozesse (Vite)</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ KONTAKT ============ -->
-    <section id="kontakt" class="section">
-      <div class="container narrow contact reveal">
-        <h2 class="section-title">Kontakt</h2>
-        <p class="contact-lead">
-          Sie suchen jemanden, der motiviert ist, modern arbeitet und schnell lernt?
-          Dann freue ich mich, von Ihnen zu hören.
-        </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:cesar.corporate@hotmail.com">cesar.corporate@hotmail.com</a>
-          <a class="btn btn-ghost" href="https://github.com/cesarangel777" target="_blank" rel="noopener">github.com/cesarangel777</a>
-        </div>
+    <section class="cta-band">
+      <div class="container reveal">
+        <h2>Interesse an einer Zusammenarbeit?</h2>
+        <p>Ich freue mich über eine Nachricht – ob Praktikum, Lehrstelle oder Junior-Position.</p>
+        <a class="btn btn-primary" href="kontakt.html">Kontakt aufnehmen</a>
       </div>
     </section>
 

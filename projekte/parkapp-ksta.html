@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParkApp KSTA · Projekt von César</title>
+  <meta name="description" content="ParkApp KSTA: Mobile-first React-Prototyp für die Parkplatz-Buchung beim Steueramt Zürich.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav-logo">C<span>ésar</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="../projekte.html" aria-current="page">Projekte</a></li>
+        <li><a href="../ueber-mich.html">Über mich</a></li>
+        <li><a href="../kontakt.html" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Brotkrumen-Navigation">
+          <a href="../index.html">Start</a> <span aria-hidden="true">›</span>
+          <a href="../projekte.html">Projekte</a> <span aria-hidden="true">›</span>
+          <span>ParkApp KSTA</span>
+        </nav>
+        <div class="project-meta">
+          <span class="badge badge-type">Web-App · Prototyp</span>
+          <span class="badge badge-private">Privates Repo · Einblick auf Anfrage</span>
+        </div>
+        <h1>ParkApp KSTA</h1>
+        <p class="lead">
+          Mobile-first Prototyp für die Parkplatz-Buchung beim Steueramt Zürich –
+          mein erstes Projekt mit React und einem echten, mehrstufigen Prozess.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+
+        <div class="detail-main">
+
+          <h2>Das Problem</h2>
+          <p>
+            Beim Steueramt Zürich geben interne Mieterinnen und Mieter ihre
+            Parkplätze frei, wenn sie sie nicht brauchen. Bisher lief das über
+            einen Outlook-Kalender, E-Mails und Rückfragen: Wer einen Platz suchte,
+            musste den Kalender durchsuchen, jemanden anschreiben, auf Antwort
+            warten und die Zahlung separat klären.
+          </p>
+          <p>
+            Die App bildet genau diesen Ablauf digital ab – ohne den bestehenden
+            Prozess zu sprengen, sondern indem sie ihn ordnet.
+          </p>
+
+          <h2>Der Ablauf in der App</h2>
+          <ul>
+            <li><strong>Verfügbarkeit prüfen</strong> – freigegebene Plätze mit Ort, Vermieter und Zeitraum</li>
+            <li><strong>Anfrage stellen</strong> – Platz wählen, Kennzeichen und Zeitraum eingeben</li>
+            <li><strong>Zahlung</strong> – CHF 8.– pro Tag via TWINT an den Vermieter</li>
+            <li><strong>Bestätigung</strong> – Status unter «Meine Buchungen» verwalten</li>
+          </ul>
+
+          <h2>Screenshots</h2>
+          <div class="gallery">
+            <figure>
+              <button type="button">
+                <img src="../assets/img/parkapp.jpg" alt="Startbildschirm mit Erklärung des Buchungsprozesses in vier Schritten">
+              </button>
+              <figcaption>Start: der Prozess in vier Schritten</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../assets/img/parkapp-2.jpg" alt="Liste der aktuell freien Parkplätze mit Vermieter und Zeitraum">
+              </button>
+              <figcaption>Freie Parkplätze aus dem Kalender</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../assets/img/parkapp-3.jpg" alt="Buchungsformular mit Kennzeichen, Datumsauswahl und automatischer Preisberechnung">
+              </button>
+              <figcaption>Buchungsformular mit Preisberechnung</figcaption>
+            </figure>
+          </div>
+
+          <h2>Was ich technisch umgesetzt habe</h2>
+          <ul>
+            <li>
+              <strong>React 18 mit Vite:</strong> Aufteilung in Screens
+              (Start, Verfügbarkeit, Buchung, Meine Buchungen, Profil) und
+              wiederverwendbare Komponenten für Header und Navigation.
+            </li>
+            <li>
+              <strong>Eigene Navigation:</strong> Der Wechsel zwischen den Screens
+              läuft über den Zustand der App – inklusive «Zurück»-Weg aus dem
+              Buchungsformular.
+            </li>
+            <li>
+              <strong>Datenhaltung gekapselt:</strong> Buchungen liegen im
+              <code>localStorage</code>, aber hinter einer eigenen Datei
+              (<code>store.js</code>). Dadurch lässt sich später ein echtes Backend
+              anschliessen, ohne die Screens anzufassen.
+            </li>
+            <li>
+              <strong>Preisberechnung:</strong> Aus dem gewählten Zeitraum wird die
+              Anzahl Tage und der Betrag berechnet und live angezeigt.
+            </li>
+            <li>
+              <strong>E-Mail-Vorlage:</strong> Die App baut die fertige Anfrage an
+              den Vermieter zusammen – mit Parkplatznummer, Kennzeichen und Betrag.
+            </li>
+          </ul>
+
+          <h2>Was ich dabei gelernt habe</h2>
+          <p>
+            Das war mein Einstieg in React und in komponentenbasiertes Denken:
+            Eine Oberfläche ist kein einzelnes HTML-Dokument, sondern besteht aus
+            Bausteinen, die Daten bekommen und darstellen. Am meisten gelernt habe
+            ich beim Zustand – also der Frage, welche Information wo lebt und wer
+            sie verändern darf.
+          </p>
+          <p>
+            Genauso wichtig war die Erkenntnis, dass man einen bestehenden Prozess
+            erst verstehen muss, bevor man ihn digitalisiert. Die App ersetzt nicht
+            den Ablauf, sondern nimmt ihm die manuellen Zwischenschritte.
+          </p>
+
+          <h2>Nächste Schritte Richtung Produktion</h2>
+          <ul>
+            <li>Anbindung an den Outlook-Parkplatzkalender über Microsoft Graph</li>
+            <li>Login via Microsoft Entra ID (SSO)</li>
+            <li>Backend statt <code>localStorage</code></li>
+            <li>Installierbar als PWA</li>
+          </ul>
+
+          <div class="next-project">
+            <a href="cis-it-support.html">← Vorheriges: CIS – C IT Support</a>
+            <a href="ls-studio.html">Nächstes Projekt: LS Studio →</a>
+          </div>
+        </div>
+
+        <aside class="detail-side reveal">
+          <h3>Rolle</h3>
+          <p>Analyse des Prozesses, Konzept, Umsetzung als Prototyp.</p>
+
+          <h3>Technik</h3>
+          <ul>
+            <li>React 18</li>
+            <li>Vite</li>
+            <li>JavaScript</li>
+            <li>localStorage</li>
+            <li>Mobile-first CSS</li>
+          </ul>
+
+          <h3>Status</h3>
+          <p>Funktionsfähiger Prototyp mit Testdaten. Repository privat – Einblick auf Anfrage.</p>
+
+          <h3>Umfang</h3>
+          <p>5 Screens, eigene Navigation, Preislogik.</p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Schliessen">×</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> César · Erstellt mit HTML, CSS, JavaScript – und einem KI-gestützten Workflow.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

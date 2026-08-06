@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helvetic Narcos · Projekt von César</title>
+  <meta name="description" content="Helvetic Narcos: atmosphärische Landingpage für ein Streetwear-Label mit Intro-Sequenz und eigenem Deployment-Script.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav-logo">C<span>ésar</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="../projekte.html" aria-current="page">Projekte</a></li>
+        <li><a href="../ueber-mich.html">Über mich</a></li>
+        <li><a href="../kontakt.html" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Brotkrumen-Navigation">
+          <a href="../index.html">Start</a> <span aria-hidden="true">›</span>
+          <a href="../projekte.html">Projekte</a> <span aria-hidden="true">›</span>
+          <span>Helvetic Narcos</span>
+        </nav>
+        <div class="project-meta">
+          <span class="badge badge-type">Brand-Landingpage</span>
+          <span class="badge badge-private">Privates Repo · Einblick auf Anfrage</span>
+        </div>
+        <h1>Helvetic Narcos</h1>
+        <p class="lead">
+          Landingpage für ein Streetwear-Label: «Swiss precision, Mexican blood» –
+          ein inszeniertes Scroll-Erlebnis für eine auf 777 Stück limitierte
+          Kollektion.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+
+        <div class="detail-main">
+
+          <h2>Die Idee</h2>
+          <p>
+            Bei einem Streetwear-Drop geht es nicht nur um Produkte, sondern um
+            Spannung und Zugehörigkeit. Die Seite sollte sich deshalb nicht wie ein
+            Online-Shop anfühlen, sondern wie ein Eintritt: dunkel, langsam
+            aufgebaut, mit einer Intro-Sequenz, die man durchschreitet, bevor man
+            die Kollektion sieht.
+          </p>
+          <p>
+            Das Ziel war eine Atmosphäre, die zur Marke passt – und ein Countdown,
+            der auf den ersten Drop hinführt.
+          </p>
+
+          <h2>Screenshots</h2>
+          <div class="gallery">
+            <figure>
+              <button type="button">
+                <img src="../assets/img/helvetic.jpg" alt="Intro-Sequenz mit Gothic-Schriftzug auf schwarzem Hintergrund">
+              </button>
+              <figcaption>Intro: «Scroll to enter»</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../assets/img/helvetic-3.jpg" alt="Countdown zum ersten Drop der OG Collection">
+              </button>
+              <figcaption>Countdown zum ersten Drop</figcaption>
+            </figure>
+          </div>
+
+          <h2>Was ich technisch umgesetzt habe</h2>
+          <ul>
+            <li>
+              <strong>Scroll-gesteuerte Inszenierung:</strong> Die Intro-Sequenz
+              reagiert auf das Scrollen und blendet Schritt für Schritt in den
+              Hauptinhalt über – inklusive «Skip Intro» für wiederkehrende
+              Besuchende.
+            </li>
+            <li>
+              <strong>Live-Countdown:</strong> Tage, Stunden, Minuten und Sekunden
+              bis zum Drop, berechnet in JavaScript und sekündlich aktualisiert.
+            </li>
+            <li>
+              <strong>Atmosphäre über Details:</strong> Eigene Schriftwahl, Video-
+              und Bildmaterial, Sound mit Ein-/Ausschalter und abgestimmte
+              Farbwelt in Schwarz und Gold.
+            </li>
+            <li>
+              <strong>Eigenes Deployment-Script:</strong> Ein selbst geschriebenes
+              PowerShell-Script lädt die Seite per FTP auf den Webserver – der
+              erste Deployment-Weg, den ich ausserhalb von GitHub Pages
+              eingerichtet habe.
+            </li>
+          </ul>
+
+          <h2>Was ich dabei gelernt habe</h2>
+          <p>
+            Hier habe ich zum ersten Mal gemerkt, wie stark Timing eine Website
+            prägt. Eine Animation, die eine halbe Sekunde zu lang dauert, wirkt
+            zäh; eine, die zu schnell ist, verpufft. Das lässt sich nicht
+            berechnen – man muss es ausprobieren, anschauen und nachjustieren.
+          </p>
+          <p>
+            Ausserdem war das Deployment-Script ein wichtiger Schritt: Ich musste
+            verstehen, welche Dateien überhaupt auf den Server gehören und wie ein
+            automatisierter Upload abläuft, statt Dateien von Hand zu kopieren.
+          </p>
+
+          <div class="next-project">
+            <a href="c-visionary-studio.html">← Vorheriges: C Visionary Studio</a>
+            <a href="python-grundlagen.html">Nächstes Projekt: Programmier-Grundlagen →</a>
+          </div>
+        </div>
+
+        <aside class="detail-side reveal">
+          <h3>Rolle</h3>
+          <p>Konzept, Design, Umsetzung und Deployment.</p>
+
+          <h3>Technik</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Scroll-Animationen</li>
+            <li>FTP-Deployment (PowerShell)</li>
+          </ul>
+
+          <h3>Status</h3>
+          <p>Umgesetzt. Repository privat – Einblick auf Anfrage.</p>
+
+          <h3>Besonderheit</h3>
+          <p>Erstes eigenes Deployment-Script ausserhalb von GitHub Pages.</p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Schliessen">×</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> César · Erstellt mit HTML, CSS, JavaScript – und einem KI-gestützten Workflow.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
