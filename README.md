@@ -11,9 +11,9 @@ Mehrseitige Website mit eigener Detailseite pro Projekt:
 
 ```
 Portfolio/
-├── index.html              ← Startseite
+├── index.html              ← Willkommensseite (Vollbild-Einstieg)
+├── ueber-mich.html         ← Quereinstieg, Motivation, Stärken, Studium
 ├── projekte.html           ← Übersicht mit Filterfunktion
-├── ueber-mich.html         ← Arbeitsweise, Lern-Setup, Skills
 ├── kontakt.html            ← Kontakt
 ├── projekte/               ← Detailseite pro Projekt
 │   ├── cis-it-support.html
@@ -39,8 +39,16 @@ Portfolio/
 | **Helvetic Narcos** | Landingpage für ein Streetwear-Label | HTML, CSS, JavaScript |
 | **Programmier-Grundlagen** | Python-Mini-Projekte mit GPT-Mentor | Python |
 
+## Seitenkonzept
+
+Die Startseite ist eine reduzierte **Willkommensseite**: grosse Aussage
+(«IT-Quereinsteiger mit Biss»), kurze Einordnung und drei grosse Wege zu den
+Unterseiten. Von dort geht es zur persönlichen Seite (Motivation, Quereinstieg,
+Stärken, Studium) oder zu den Projekten.
+
 ## Interaktive Elemente
 
+- **Willkommensseite** mit gestaffelter Einblend-Animation und Hover-Zeilen
 - **Filter** auf der Projektübersicht (nach Kategorie, mit Trefferanzeige)
 - **Lightbox** für Screenshots auf den Detailseiten (`<dialog>`-Element)
 - **Scroll-Reveal** über `IntersectionObserver`
