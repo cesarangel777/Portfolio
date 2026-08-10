@@ -628,19 +628,6 @@ code {
   transform: translateX(6px);
 }
 
-/* Statusleiste unten */
-
-.welcome-status {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 2rem;
-  margin-top: clamp(1.5rem, 4vh, 2.5rem);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
 /* Auftritt beim Laden */
 
 .rise {
