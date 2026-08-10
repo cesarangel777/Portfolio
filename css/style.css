@@ -556,25 +556,6 @@ code {
 
 .welcome-inner { width: min(1100px, 92%); margin-inline: auto; }
 
-.welcome-name {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: clamp(1.2rem, 3vh, 2rem);
-}
-
-.welcome-name::before {
-  content: "";
-  width: 2.5rem;
-  height: 1px;
-  background: var(--accent);
-}
-
 .welcome-title {
   font-size: clamp(2rem, 5.8vw, 4.8rem);
   font-weight: 800;
