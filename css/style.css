@@ -641,28 +641,6 @@ code {
   color: var(--text-muted);
 }
 
-.welcome-status .available {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #4ee38a;
-}
-
-.welcome-status .available::before {
-  content: "";
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: #4ee38a;
-  box-shadow: 0 0 0 0 rgba(78, 227, 138, 0.6);
-  animation: puls 2.4s ease-out infinite;
-}
-
-@keyframes puls {
-  70% { box-shadow: 0 0 0 0.6rem rgba(78, 227, 138, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(78, 227, 138, 0); }
-}
-
 /* Auftritt beim Laden */
 
 .rise {
@@ -683,7 +661,6 @@ code {
 
 @media (prefers-reduced-motion: reduce) {
   .rise { opacity: 1; animation: none; }
-  .welcome-status .available::before { animation: none; }
 }
 
 @media (max-width: 720px) {
