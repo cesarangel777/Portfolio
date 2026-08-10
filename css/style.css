@@ -579,7 +579,7 @@ code {
 
 .path {
   display: grid;
-  grid-template-columns: 3.5rem 1fr auto 2.5rem;
+  grid-template-columns: 1fr auto 2.5rem;
   gap: 1.2rem;
   align-items: baseline;
   padding: clamp(0.85rem, 2vh, 1.25rem) 0.5rem;
@@ -593,13 +593,6 @@ code {
 .path:focus-visible {
   padding-inline: 1.3rem 1.1rem;
   background: linear-gradient(90deg, rgba(53, 162, 255, 0.12), rgba(124, 92, 255, 0.06));
-}
-
-.path-num {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--accent);
 }
 
 .path-label {
@@ -652,17 +645,16 @@ code {
 
 @media (max-width: 720px) {
   .path {
-    grid-template-columns: 2.2rem 1fr auto;
+    grid-template-columns: 1fr auto;
     gap: 0.3rem 0.8rem;
     align-items: center;
   }
 
-  .path-num { grid-area: 1 / 1; }
-  .path-label { grid-area: 1 / 2; }
-  .path-arrow { grid-area: 1 / 3; font-size: 1.25rem; }
+  .path-label { grid-area: 1 / 1; }
+  .path-arrow { grid-area: 1 / 2; font-size: 1.25rem; }
 
   .path-desc {
-    grid-area: 2 / 2 / 3 / -1;
+    grid-area: 2 / 1 / 3 / -1;
     text-align: left;
     font-size: 0.84rem;
   }
