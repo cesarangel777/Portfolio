@@ -255,6 +255,21 @@ code {
 
 /* ---------- Über mich ---------- */
 
+.profile-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 160px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
 .about p + p { margin-top: 1rem; }
 .about strong { color: var(--accent); }
 
