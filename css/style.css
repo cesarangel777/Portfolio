@@ -512,15 +512,33 @@ code {
 
 .welcome-inner { width: min(1100px, 92%); margin-inline: auto; }
 
+.welcome-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(1.2rem, 3vh, 2rem);
+}
+
 .welcome-title {
   font-size: clamp(2rem, 5.8vw, 4.8rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.035em;
-  margin-bottom: clamp(1.2rem, 3vh, 2rem);
+  margin-bottom: 0;
 }
 
 .welcome-title .line { display: block; }
+
+.welcome-art { flex: 0 0 auto; }
+
+.welcome-art img {
+  display: block;
+  width: clamp(220px, 24vw, 340px);
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
 
 .welcome-sub {
   max-width: 46ch;
@@ -616,6 +634,15 @@ code {
   }
 
   .welcome-sub { font-size: 0.95rem; }
+
+  .welcome-top {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .welcome-art img { width: min(220px, 60vw); }
 }
 
 /* ---------- Seitenkopf (Unterseiten) ---------- */
