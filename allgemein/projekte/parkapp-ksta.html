@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParkApp KSTA · Projekt von César</title>
+  <meta name="description" content="ParkApp KSTA: einen bestehenden Ablauf beim Steueramt Zürich verstanden und als einfache digitale Lösung neu gedacht.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav-logo">C<span>ésar</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="../ueber-mich.html">Über mich</a></li>
+        <li><a href="../projekte.html" aria-current="page">Projekte</a></li>
+        <li><a href="../kontakt.html" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Brotkrumen-Navigation">
+          <a href="../index.html">Start</a> <span aria-hidden="true">›</span>
+          <a href="../projekte.html">Projekte</a> <span aria-hidden="true">›</span>
+          <span>ParkApp KSTA</span>
+        </nav>
+        <div class="project-meta">
+          <span class="badge badge-type">Digitale Lösung · Prototyp</span>
+          <span class="badge badge-private">Aus Daten- und geschäftlichen Gründen nicht zustellbar</span>
+        </div>
+        <h1>ParkApp KSTA</h1>
+        <p class="lead">
+          Ein bestehender Ablauf beim Steueramt Zürich, verstanden und als
+          einfache digitale Lösung neu gedacht: das Projekt, in dem ich zum ersten
+          Mal einen ganzen Prozess analysiert habe.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+
+        <div class="detail-main">
+
+          <h2>Das Problem</h2>
+          <p>
+            Beim Steueramt Zürich geben interne Mieterinnen und Mieter ihre
+            Parkplätze frei, wenn sie sie nicht brauchen. Bisher lief das über
+            einen Outlook-Kalender, E-Mails und Rückfragen: Wer einen Platz suchte,
+            musste den Kalender durchsuchen, jemanden anschreiben, auf Antwort
+            warten und die Zahlung separat klären.
+          </p>
+          <p>
+            Die App bildet genau diesen Ablauf digital ab, ohne den bestehenden
+            Prozess zu sprengen, sondern indem sie ihn ordnet.
+          </p>
+
+          <h2>Der Ablauf in der App</h2>
+          <ul>
+            <li><strong>Verfügbarkeit prüfen</strong>: freigegebene Plätze mit Ort, Vermieter und Zeitraum</li>
+            <li><strong>Anfrage stellen</strong>: Platz wählen, Kennzeichen und Zeitraum eingeben</li>
+            <li><strong>Zahlung</strong>: CHF 8.– pro Tag via TWINT an den Vermieter</li>
+            <li><strong>Bestätigung</strong>: Status unter «Meine Buchungen» verwalten</li>
+          </ul>
+
+          <h2>Einblicke</h2>
+          <div class="gallery">
+            <figure>
+              <button type="button">
+                <img src="../../assets/img/parkapp.jpg" alt="Startbildschirm mit Erklärung des Buchungsprozesses in vier Schritten">
+              </button>
+              <figcaption>Start: der Prozess in vier Schritten</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../../assets/img/parkapp-2.jpg" alt="Liste der aktuell freien Parkplätze mit Vermieter und Zeitraum">
+              </button>
+              <figcaption>Freie Parkplätze aus dem Kalender</figcaption>
+            </figure>
+            <figure>
+              <button type="button">
+                <img src="../../assets/img/parkapp-3.jpg" alt="Buchungsformular mit Kennzeichen, Datumsauswahl und automatischer Preisberechnung">
+              </button>
+              <figcaption>Buchungsformular mit Preisberechnung</figcaption>
+            </figure>
+          </div>
+
+          <h2>Was ich gemacht habe</h2>
+          <ul>
+            <li>
+              <strong>Den Ist-Zustand aufgenommen:</strong> Wer gibt einen Platz
+              frei, wer sucht einen, welche Schritte laufen heute über E-Mail und
+              welche Rückfragen entstehen dabei immer wieder.
+            </li>
+            <li>
+              <strong>Den Ablauf auf vier Schritte reduziert:</strong> suchen,
+              anfragen, bezahlen, bestätigen. Alles, was nicht dazu beiträgt, ist
+              bewusst nicht in der App.
+            </li>
+            <li>
+              <strong>Die App fürs Handy gedacht:</strong> Ein Parkplatz wird
+              unterwegs gesucht, nicht am Schreibtisch, deshalb ist der Prototyp
+              zuerst für das Smartphone entworfen.
+            </li>
+            <li>
+              <strong>Rechnen abgenommen:</strong> Aus dem gewählten Zeitraum
+              berechnet die App die Anzahl Tage und den Betrag und zeigt beides
+              sofort an, statt es der Nutzerin zu überlassen.
+            </li>
+            <li>
+              <strong>Die Anfrage vorbereitet:</strong> Die App stellt die fertige
+              Nachricht an den Vermieter zusammen, mit Parkplatznummer, Kennzeichen
+              und Betrag, damit nichts vergessen geht.
+            </li>
+            <li>
+              <strong>An morgen gedacht:</strong> Die Daten sind so abgelegt, dass
+              später ein echtes System dahinter angeschlossen werden kann, ohne die
+              App neu bauen zu müssen.
+            </li>
+          </ul>
+
+          <h2>Was ich dabei gelernt habe</h2>
+          <p>
+            Die wichtigste Erkenntnis: Man muss einen bestehenden Prozess erst
+            verstehen, bevor man ihn digitalisiert. Die App ersetzt den Ablauf
+            nicht, sie nimmt ihm die manuellen Zwischenschritte. Hätte ich zuerst
+            gebaut und dann gefragt, wäre etwas entstanden, das niemand benutzt.
+          </p>
+          <p>
+            Genauso wichtig war das Weglassen. Jede zusätzliche Funktion klingt im
+            Gespräch gut und macht die Anwendung im Alltag schwerer. Zu entscheiden,
+            was <em>nicht</em> hineingehört, war anspruchsvoller als die Umsetzung
+            selbst.
+          </p>
+
+          <h2>Nächste Schritte Richtung Produktion</h2>
+          <ul>
+            <li>Anbindung an den bestehenden Outlook-Parkplatzkalender</li>
+            <li>Anmeldung über das bestehende Firmenkonto</li>
+            <li>Zentrale Datenhaltung statt lokaler Speicherung</li>
+            <li>Installierbar wie eine gewöhnliche App</li>
+          </ul>
+
+          <div class="next-project">
+            <a href="cis-it-support.html">← Vorheriges: CIS – C IT Support</a>
+            <a href="ls-studio.html">Nächstes Projekt: LS Studio →</a>
+          </div>
+        </div>
+
+        <aside class="detail-side reveal">
+          <h3>Rolle</h3>
+          <p>Analyse des Ablaufs, Konzept und Umsetzung als Prototyp.</p>
+
+          <h3>Was dabei entstand</h3>
+          <ul>
+            <li>Aufnahme des Ist-Ablaufs</li>
+            <li>Konzept in vier Schritten</li>
+            <li>Lauffähiger Prototyp</li>
+          </ul>
+
+          <h3>Status</h3>
+          <p>Funktionsfähiger Prototyp mit Testdaten. Die Projektdateien sind aus Daten- und geschäftlichen Gründen nicht zustellbar.</p>
+
+          <h3>Umfang</h3>
+          <p>Fünf Ansichten, eigener Ablauf, automatische Preisberechnung.</p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Schliessen">×</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> César · Diese Website habe ich selbst gestaltet und umgesetzt.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
