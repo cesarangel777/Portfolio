@@ -1,7 +1,12 @@
-# Portfolio
+# Portfolio (neutrale Fassung)
 
-Persönliche Portfolio-Website zur Präsentation meiner Projekte – für Bewerbungen
-auf Junior-Stellen als Programmierer.
+Persönliche Portfolio-Website für **allgemeine Bewerbungen**: Im Vordergrund
+stehen der Quereinstieg, die Beweggründe für die IT und für das Studium
+Wirtschaftsinformatik, die Person dahinter und die bisherigen Projekte, nicht
+einzelne Programmiersprachen oder Technik-Details.
+
+> Diese Fassung liegt auf dem Branch `claude/portfolio-general-applications-qj8zbj`.
+> Die stärker auf Programmierstellen ausgerichtete Fassung bleibt auf `main`.
 
 **Live:** https://cesarangel777.github.io/Portfolio/ *(nach Aktivierung von GitHub Pages, siehe unten)*
 
@@ -12,7 +17,7 @@ Mehrseitige Website mit eigener Detailseite pro Projekt:
 ```
 Portfolio/
 ├── index.html              ← Willkommensseite (Vollbild-Einstieg)
-├── ueber-mich.html         ← Quereinstieg, Motivation, Stärken, Studium
+├── ueber-mich.html         ← Weg, warum IT, warum Wirtschaftsinformatik, Stärken
 ├── projekte.html           ← Übersicht mit Filterfunktion
 ├── kontakt.html            ← Kontakt
 ├── projekte/               ← Detailseite pro Projekt
@@ -24,45 +29,46 @@ Portfolio/
 │   └── python-grundlagen.html
 ├── css/style.css           ← Design
 ├── js/main.js              ← Navigation, Filter, Lightbox, Scroll-Reveal
-├── assets/img/             ← Projekt-Screenshots
-└── projects/               ← Beispiel-Code der Lernprojekte
+├── assets/img/             ← Projektbilder und Porträt
+└── projects/               ← Beispiel aus den Übungsprojekten
 ```
 
 ## Vorgestellte Projekte
 
-| Projekt | Beschreibung | Technik |
+| Projekt | Worum es geht | Meine Rolle |
 | --- | --- | --- |
-| **CIS – C IT Support** | Website für meinen eigenen IT-Support-Service | HTML, CSS, JavaScript, Canvas |
-| **ParkApp KSTA** | Prototyp für die Parkplatz-Buchung (Steueramt Zürich) | React 18, Vite |
-| **LS Studio** | Kundenprojekt: Luxury Nail Studio in Aarau | HTML, CSS, JavaScript |
-| **C Visionary Studio** | Business-Website für KI-generierte Videos & Bilder | HTML, CSS, JavaScript |
-| **Helvetic Narcos** | Landingpage für ein Streetwear-Label | HTML, CSS, JavaScript |
-| **Programmier-Grundlagen** | Python-Mini-Projekte mit GPT-Mentor | Python |
+| **CIS – C IT Support** | Eigener IT-Support-Service im Aargau | Angebot, Auftritt, Kundenkontakt |
+| **ParkApp KSTA** | Parkplatz-Ablauf beim Steueramt Zürich digitalisiert | Analyse, Konzept, Prototyp |
+| **LS Studio** | Website für ein Nagelstudio in Aarau | Kundenprojekt, Abstimmung, Umsetzung |
+| **C Visionary Studio** | Auftritt für ein Studio für Videos und Bilder | Konzept, Inhalte, Veröffentlichung |
+| **Helvetic Narcos** | Auftritt zur Veröffentlichung einer Marke | Konzept, Gestaltung, Veröffentlichung |
+| **Laufende Weiterbildung** | Lernen mit Plan, Mentor-Setup und Übungsprojekten | Eigenständiges Lernen |
 
 ## Seitenkonzept
 
 Die Startseite ist eine reduzierte **Willkommensseite**: grosse Aussage
-(«IT-Quereinsteiger mit Biss»), kurze Einordnung und drei grosse Wege zu den
-Unterseiten. Von dort geht es zur persönlichen Seite (Motivation, Quereinstieg,
-Stärken, Studium) oder zu den Projekten.
+(«IT-Quereinsteiger mit Biss»), kurze Einordnung und drei Wege zu den
+Unterseiten. Die Seite **Über mich** beantwortet nacheinander die vier Fragen,
+die in einem Bewerbungsgespräch ohnehin kommen: Wie war mein Weg? Warum IT?
+Warum Wirtschaftsinformatik? Was bringe ich mit?
 
 ## Interaktive Elemente
 
 - **Willkommensseite** mit gestaffelter Einblend-Animation und Hover-Zeilen
 - **Filter** auf der Projektübersicht (nach Kategorie, mit Trefferanzeige)
-- **Lightbox** für Screenshots auf den Detailseiten (`<dialog>`-Element)
+- **Lightbox** für Bilder auf den Detailseiten (`<dialog>`-Element)
 - **Scroll-Reveal** über `IntersectionObserver`
 - **Mobile-Navigation** als aufklappbares Menü
 
 ## Technik
 
-- Reines HTML, CSS und JavaScript – kein Build-Schritt nötig
-- Responsives Design (Desktop & Mobile)
+- Reines HTML, CSS und JavaScript, kein Build-Schritt nötig
+- Responsives Design (Desktop und Mobile)
 - Schweizer Rechtschreibung, `prefers-reduced-motion` wird respektiert
 
 ## Lokal ansehen
 
-Einfach `index.html` im Browser öffnen – oder mit einem kleinen Server:
+Einfach `index.html` im Browser öffnen, oder mit einem kleinen Server:
 
 ```bash
 python3 -m http.server 8000
@@ -72,9 +78,10 @@ python3 -m http.server 8000
 ## Auf GitHub Pages veröffentlichen
 
 1. Auf GitHub: **Settings → Pages**
-2. Unter *Build and deployment*: Source **Deploy from a branch**, Branch **main**, Ordner **/ (root)**
-3. Speichern – nach 1–2 Minuten ist die Seite unter
-   `https://cesarangel777.github.io/Portfolio/` erreichbar.
+2. Unter *Build and deployment*: Source **Deploy from a branch**, Branch
+   auswählen (für diese Fassung `claude/portfolio-general-applications-qj8zbj`),
+   Ordner **/ (root)**
+3. Speichern, nach 1–2 Minuten ist die Seite erreichbar.
 
 ## Inhalte anpassen
 

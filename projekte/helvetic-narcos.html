@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helvetic Narcos · Projekt von César</title>
-  <meta name="description" content="Helvetic Narcos: atmosphärische Landingpage für eine Marke mit Intro-Sequenz und eigenem Deployment-Script.">
+  <meta name="description" content="Helvetic Narcos: Auftritt für die Veröffentlichung einer Marke, mit inszeniertem Einstieg und Countdown.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -35,13 +35,13 @@
           <span>Helvetic Narcos</span>
         </nav>
         <div class="project-meta">
-          <span class="badge badge-type">Brand-Landingpage</span>
-          <span class="badge badge-private">Privates Repo · Aus geschäftlichen Gründen nicht öffentlich</span>
+          <span class="badge badge-type">Markenauftritt</span>
+          <span class="badge badge-private">Aus geschäftlichen Gründen nicht öffentlich</span>
         </div>
         <h1>Helvetic Narcos</h1>
         <p class="lead">
-          Landingpage für eine Marke: «Swiss precision, Mexican blood», ein
-          inszeniertes Scroll-Erlebnis mit Countdown zur Veröffentlichung.
+          Auftritt für eine Marke: «Swiss precision, Mexican blood», eine
+          inszenierte Seite mit Countdown auf die Veröffentlichung.
         </p>
       </div>
     </section>
@@ -56,87 +56,83 @@
             Bei der Veröffentlichung einer neuen Marke geht es nicht nur um das
             Angebot, sondern um Spannung und Zugehörigkeit. Die Seite sollte sich
             deshalb nicht wie ein gewöhnlicher Webauftritt anfühlen, sondern wie
-            ein Eintritt: dunkel, langsam aufgebaut, mit einer Intro-Sequenz, die
-            man durchschreitet, bevor man den Inhalt sieht.
+            ein Eintritt: dunkel, langsam aufgebaut, mit einem Einstieg, den man
+            durchschreitet, bevor man den Inhalt sieht.
           </p>
           <p>
             Das Ziel war eine Atmosphäre, die zur Marke passt, und ein Countdown,
-            der auf die Veröffentlichung hinführt.
+            der auf den Veröffentlichungstermin hinführt.
           </p>
 
-          <h2>Screenshot</h2>
+          <h2>Einblick</h2>
           <div class="gallery">
             <figure>
               <button type="button">
-                <img src="../assets/img/helvetic.jpg" alt="Intro-Sequenz mit Gothic-Schriftzug auf schwarzem Hintergrund">
+                <img src="../assets/img/helvetic.jpg" alt="Einstiegssequenz mit Gothic-Schriftzug auf schwarzem Hintergrund">
               </button>
-              <figcaption>Intro: «Scroll to enter»</figcaption>
+              <figcaption>Der Einstieg: «Scroll to enter»</figcaption>
             </figure>
           </div>
 
-          <h2>Was ich technisch umgesetzt habe</h2>
+          <h2>Was ich umgesetzt habe</h2>
           <ul>
             <li>
-              <strong>Scroll-gesteuerte Inszenierung:</strong> Die Intro-Sequenz
-              reagiert auf das Scrollen und blendet Schritt für Schritt in den
-              Hauptinhalt über, inklusive «Skip Intro» für wiederkehrende
-              Besuchende.
+              <strong>Ein inszenierter Einstieg:</strong> Die Seite baut sich beim
+              Scrollen Schritt für Schritt auf, mit der Möglichkeit, den Einstieg
+              zu überspringen, wenn jemand zum zweiten Mal kommt.
             </li>
             <li>
-              <strong>Live-Countdown:</strong> Tage, Stunden, Minuten und Sekunden
-              bis zur Veröffentlichung, berechnet in JavaScript und sekündlich
-              aktualisiert.
+              <strong>Ein laufender Countdown:</strong> Tage, Stunden, Minuten und
+              Sekunden bis zur Veröffentlichung, sekündlich aktualisiert.
             </li>
             <li>
-              <strong>Atmosphäre über Details:</strong> Eigene Schriftwahl, Video-
-              und Bildmaterial, Sound mit Ein-/Ausschalter und abgestimmte
+              <strong>Stimmung über Details:</strong> eigene Schriftwahl, Video- und
+              Bildmaterial, Ton mit Ein- und Ausschalter und eine abgestimmte
               Farbwelt in Schwarz und Gold.
             </li>
             <li>
-              <strong>Eigenes Deployment-Script:</strong> Ein selbst geschriebenes
-              PowerShell-Script lädt die Seite per FTP auf den Webserver, der
-              erste Deployment-Weg, den ich ausserhalb von GitHub Pages
-              eingerichtet habe.
+              <strong>Der Weg auf den Server:</strong> Die Veröffentlichung läuft
+              über einen automatisierten Ablauf, den ich selbst eingerichtet habe,
+              statt Dateien von Hand zu kopieren.
             </li>
           </ul>
 
           <h2>Was ich dabei gelernt habe</h2>
           <p>
-            Hier habe ich zum ersten Mal gemerkt, wie stark Timing eine Website
-            prägt. Eine Animation, die eine halbe Sekunde zu lang dauert, wirkt
-            zäh; eine, die zu schnell ist, verpufft. Das lässt sich nicht
-            berechnen: man muss es ausprobieren, anschauen und nachjustieren.
+            Hier habe ich zum ersten Mal gemerkt, wie stark Timing einen Auftritt
+            prägt. Eine Bewegung, die eine halbe Sekunde zu lang dauert, wirkt zäh;
+            eine, die zu schnell ist, verpufft. Das lässt sich nicht berechnen: man
+            muss es ausprobieren, anschauen und nachjustieren.
           </p>
           <p>
-            Ausserdem war das Deployment-Script ein wichtiger Schritt: Ich musste
-            verstehen, welche Dateien überhaupt auf den Server gehören und wie ein
-            automatisierter Upload abläuft, statt Dateien von Hand zu kopieren.
+            Ausserdem war der automatisierte Veröffentlichungsweg ein wichtiger
+            Schritt: Ich musste verstehen, welche Dateien überhaupt auf den Server
+            gehören und wie ein solcher Ablauf abgesichert wird, damit nichts
+            Falsches nach aussen gelangt.
           </p>
 
           <div class="next-project">
             <a href="c-visionary-studio.html">← Vorheriges: C Visionary Studio</a>
-            <a href="python-grundlagen.html">Nächstes Projekt: Programmier-Grundlagen →</a>
+            <a href="python-grundlagen.html">Nächstes Projekt: Laufende Weiterbildung →</a>
           </div>
         </div>
 
         <aside class="detail-side reveal">
           <h3>Rolle</h3>
-          <p>Konzept, Design, Umsetzung und Deployment.</p>
+          <p>Konzept, Gestaltung, Umsetzung und Veröffentlichung.</p>
 
-          <h3>Technik</h3>
+          <h3>Was dabei entstand</h3>
           <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Scroll-Animationen</li>
-            <li>FTP-Deployment (PowerShell)</li>
+            <li>Auftritt zur Markeneinführung</li>
+            <li>Countdown auf den Termin</li>
+            <li>Automatisierte Veröffentlichung</li>
           </ul>
 
           <h3>Status</h3>
-          <p>Umgesetzt. Repository aus geschäftlichen Gründen nicht öffentlich.</p>
+          <p>Umgesetzt. Die Projektdateien sind aus geschäftlichen Gründen nicht öffentlich.</p>
 
           <h3>Besonderheit</h3>
-          <p>Erstes eigenes Deployment-Script ausserhalb von GitHub Pages.</p>
+          <p>Erster eigener, automatisierter Weg auf einen Webserver.</p>
         </aside>
 
       </div>
@@ -152,7 +148,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> César · Erstellt mit HTML, CSS, JavaScript und einem KI-gestützten Workflow.</p>
+      <p>© <span id="year"></span> César · Diese Website habe ich selbst gestaltet und umgesetzt.</p>
     </div>
   </footer>
 
